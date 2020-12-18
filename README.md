@@ -1,4 +1,5 @@
 # OSDA-bot
+<img src="/OSDA_logo.png" width="20%" height="20%" title="LOGO" alt="OSDA">
 다양한 기능이 있는 디스코드 봇입니다.
 
 ## 기능종류
