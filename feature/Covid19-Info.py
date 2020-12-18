@@ -31,7 +31,7 @@ async def on_message(message): # on_message() event : when the bot has recieved 
     if message.author == client.user:
         return
 
-    if message.content.startswith(">코로나"):
+    if message.content.startswith(">>코로나"):
         # 보건복지부 코로나 바이러스 정보사이트"
         covidSite = "http://ncov.mohw.go.kr/index.jsp"
         covidNotice = "http://ncov.mohw.go.kr"
