@@ -1,5 +1,5 @@
 # OSDA-bot
-<img src="/docs/src_img/OSDA_logo.png" width="20%" height="20%" title="LOGO" alt="OSDA">
+<img src="https://user-images.githubusercontent.com/52783067/102687162-86102300-4230-11eb-903c-cae5d68adb0e.png" width="20%" height="20%" title="LOGO" alt="OSDA">
 다양한 기능이 있는 디스코드 봇입니다.
 
 ## 기능종류
