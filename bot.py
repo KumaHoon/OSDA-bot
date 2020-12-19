@@ -22,15 +22,19 @@ from bs4 import BeautifulSoup
 import unicodedata
 import json
 
-token = '<token-here>'
+token = 'NzgxNzc0MjU0Njg5MzUzNzc5.X8CiAg.jPh-5uyhNrV_v7At0DWCXT0ypc8'
 #Naver Open API application ID
-client_id = ""
+client_id = "21GVKZrddbQPatvMv5uK"
 #Naver Open API application token
-client_secret = ""
+client_secret = "EtdmRNFemn"
 
 client = discord.Client() # Create Instance of Client. This Client is discord server's connection to Discord Room
 bot = commands.Bot(command_prefix = '>>')
 
+# bot이 준비되면 출력됩니다.
+@client.event
+async def on_ready():
+    print('{0.user}을 로그인 완료했습니다.'.format(client))
 # bot.py 부분 
 
 @bot.command(name='99', help = '99의 인용구를 랜덤으로 출력합니다.')
@@ -50,7 +54,7 @@ async def nine_nine(ctx):
 @bot.command(name='랜덤샘플링', help='최대치,갯수를 입력하면 랜덤으로 샘플링하여 숫자를 출력합니다.')
 async def random_sampling(ctx, number_of_dice: int, number_of_sides: int):
     if (number_of_dice > 10) :
-        dice = ["Please make the number less than 10 times."]
+        dice = ["10번 이하로 입력해주세요."]
     
     else :
         dice = [
@@ -65,7 +69,7 @@ async def create_channel(ctx, channel_name='real-python'):
     guild = ctx.guild
     existing_channel = discord.utils.get(guild.channels, name=channel_name)
     if not existing_channel:
-        print(f'Creating a new channel: {channel_name}')
+        print(f'새로운 채널을 만들었습니다 : {channel_name}')
         await guild.create_text_channel(channel_name)
 
 
@@ -80,9 +84,6 @@ async def roll_error(ctx, error):
     await ctx.send(f"2 이상의 정수를 넣어주세요!\nex) /주사위 6")
 
 # status.py
-@client.event
-async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
 
 @bot.command(name='방해금지')
 @commands.is_owner()
@@ -475,4 +476,3 @@ async def on_message(message): # on_message() event : when the bot has recieved 
 #https://github.com/J-hoplin1/Papago-API-Translate-Bot
 
 client.run(token)
-
