@@ -1,20 +1,24 @@
 # OSDA-bot
-<img src="/OSDA_logo.png" width="20%" height="20%" title="LOGO" alt="OSDA">
+<img src="https://user-images.githubusercontent.com/52783067/102687162-86102300-4230-11eb-903c-cae5d68adb0e.png" width="20%" height="20%" title="LOGO" alt="OSDA">
 다양한 기능이 있는 디스코드 봇입니다.
 
 ## 기능종류
-현재 개발이 진행중인 커맨드:
-- 서버 정보 / 봇 정보 확인
-- 도움말 (+ 도움말 관리)
-- 기본적 욕설 차단
 
 현재 개발이 완료된 커맨드:
 - 코로나 알리미
 - 주사위 굴리기
 - 번역기능(한국어, 중국어, 일본어, 영어)
 
-## 사용언어
+현재 개발이 진행중인 커맨드:
+- 서버 정보 / 봇 정보 확인
+- 도움말 (+ 도움말 관리)
+- 기본적 욕설 차단
+
+### 사용언어
 python3
+
+###요구버전
+python >= 3.5.X
 
 ## 봇 개발하기
 명령어 추가하기
@@ -22,6 +26,10 @@ python3
 OSDA의 경우 커맨드를 구분하는 접두사로 `>>`를 사용합니다
 
 각 기능파일은 `OSDA-bot/feature/` 폴더 아래에 작성되어야 합니다.
+
+## 환영받는 프로젝트 기여
+- 기능 추가 / 향상
+- 디자인 / 일러스트
 
 ## 프로젝트에 기여하기
 1. Rrepository Fork하기
@@ -31,6 +39,8 @@ OSDA의 경우 커맨드를 구분하는 접두사로 `>>`를 사용합니다
 5. Branch로 Push 하기: `git push origin featurename`
 6. Pull request 요청하기
 7. 디스코드 서버에 참여하고, commit 채팅에 로그 남기기.
+
+### 커밋 메세지 템플릿은 docs 파일 안에 있습니다!
 
 ## 디스코드 서버 사용법
 디스코드 서버: https://discord.gg/QSEBxe9ekW
