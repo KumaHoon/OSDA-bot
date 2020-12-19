@@ -22,11 +22,11 @@ from bs4 import BeautifulSoup
 import unicodedata
 import json
 
-token = 'NzgxNzc0MjU0Njg5MzUzNzc5.X8CiAg.jPh-5uyhNrV_v7At0DWCXT0ypc8'
+token = '<your Token>'
 #Naver Open API application ID
-client_id = "21GVKZrddbQPatvMv5uK"
+client_id = "<your_API_id>"
 #Naver Open API application token
-client_secret = "EtdmRNFemn"
+client_secret = "<your_API_Token>"
 
 client = discord.Client() # Create Instance of Client. This Client is discord server's connection to Discord Room
 bot = commands.Bot(command_prefix = '>>')
