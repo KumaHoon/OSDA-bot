@@ -1,13 +1,12 @@
 import discord
 import traceback
-# 유튜브
 import asyncio
 import re
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='>>')
 
-Token = 'Nzg3NTYzNDA2ODIyNDczNzI4.X9WxlA.uBHOPV1MaYMinBcE_XMLusksfeE'
+Token = ''
 
 @client.event
 async def on_ready():
