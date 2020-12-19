@@ -38,10 +38,14 @@ async def nine_nine(ctx):
 
 @bot.command(name='roll_dice', help='Simulates rolling dice.')
 async def roll(ctx, number_of_dice: int, number_of_sides: int):
-    dice = [
-        str(random.choice(range(1, number_of_sides + 1)))
-        for _ in range(number_of_dice)
-    ]
+    if (number_of_dice > 10) :
+        dice = ["Please make the number less than 10 times."]
+    
+    else :
+        dice = [
+            str(random.choice(range(1, number_of_sides + 1)))
+            for _ in range(number_of_dice)
+        ]
     await ctx.send(', '.join(dice))
 
 @bot.command(name='create-channel')
